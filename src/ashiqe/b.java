@@ -7,27 +7,28 @@ package ashiqe;
 
 /**
  *
- * @author DIU
+ * @author Lab5-05
  */
-public class diuclass {
-    int a,b;
+public class b {
+    static int a;
+    static int b;
     
-    diuclass(){
-      System.out.println("DIU");
+    static{
+      a = 72;
+      b = 71;
+      
     }
     
-    diuclass(int i, int j)
+    void dis()
     {
-        a =i;
-        b = j;
-        
-        System.out.println(a+b);
-                
+      System.out.println(a);
+      System.out.println(b);
+      
     }
     
     public static void main(String[] args)
     {
-        diuclass ob = new diuclass();
-        diuclass ob2 = new diuclass(5,7);
+      b ob = new b();
+        ob.dis();
     }
 }
